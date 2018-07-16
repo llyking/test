@@ -16,13 +16,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
+    [self createUIView];
 }
 
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(void)createUIView {
+    
+    UIView *view = [[UIView alloc] initWithFrame:self.view.frame];
+    view.backgroundColor = [UIColor redColor];
+    [self.view addSubview:view];
+    
 }
 
 
